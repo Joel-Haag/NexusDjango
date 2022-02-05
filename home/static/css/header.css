@@ -1,0 +1,11 @@
+.header-button {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.header-button:hover{
+    background-color: #ff0000;
+    outline-color:  white;
+    border-color: #ff0000 !important;
+}
+
