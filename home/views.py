@@ -14,12 +14,9 @@ from .models import DateRel
 
 
 def contact(request):
-    print("1")
     if request.method == "POST":
         message_email = request.POST["message-email"]
         message = request.POST["message"]
-        print("2")
-        # lol
         # send email
         send_mail(
             subject="NEXUS",
