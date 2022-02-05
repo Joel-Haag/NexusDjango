@@ -1,1 +1,1 @@
-web: gunicorn NexusFinal.wsgip
+web: gunicorn NexusFinal.wsgi
