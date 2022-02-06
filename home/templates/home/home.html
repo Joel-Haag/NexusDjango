@@ -10,15 +10,18 @@
         <link rel="icon" type="image/x-icon" href="{% static "home/images/logo.JPG" %}"/>
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
 
         <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- Own Css-->
         <link href="{% static 'css/header.css' %}" rel="stylesheet">
+
 
     </head>
     <body id="page-top">
@@ -33,7 +36,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#stages">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Artists">Artists</a></li>
+                       <!-- <li class="nav-item"><a class="nav-link" href="#Artists">Artists</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="#Gallery">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -46,7 +50,7 @@
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Nexus</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">Where Everything & Everyone Connect</h2>
-                        <a class="btn btn-primary header-button" href="https://www.howler.co.za/" target="_blank">Buy Tickets</a>
+                        <a class="btn btn-primary header-button" href="https://www.howler.co.za/events/the-nexus-fest-110c/tickets" target="_blank">Buy Tickets</a>
                     </div>
                 </div>
             </div>
@@ -71,17 +75,18 @@
         </section>
 
         <!-- Projects-->
+        <!--
         <section class="projects-section bg-black" id="Artists">
             <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
+
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-4 col-lg-5">
                         <div class=" text-center text-lg-center">
-                         <!--   <h4 class="text-center">LINE UP</h4> -->
+
                         </div>
                     </div>
                 </div>
-                <!-- Artist One Row-->
+
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
@@ -116,9 +121,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- Artist Two Row-->
+
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                   <!-- <div class="col-lg-6"> <p>stage 1</p></div> -->
+
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -155,6 +160,31 @@
 
             </div>
         </section>
+        -->
+
+
+
+        <!-- Projects-->
+        <section class="projects-section bg-black" id="Gallery">
+            <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6" data-aos="fade-right" ><img class="img-fluid"  src="{% static '/home/images/waterpark1.jpg' %}" alt="..." /></div>
+                    <div class="col-lg-6" data-aos="fade-left"><img class="img-fluid"  src="{% static '/home/images/waterpark2.jpg' %}" alt="..." /></div>
+                    <div class="col-lg-6" data-aos="fade-right"><img class="img-fluid"  src="{% static '/home/images/waterpark3.jpg' %}" alt="..." /></div>
+                    <div class="col-lg-6" data-aos="fade-left"><img class="img-fluid"  src="{% static '/home/images/gokart1.jpg' %}" alt="..." /></div>
+                    <div class="col-lg-6" data-aos="fade-right"><img class="img-fluid"  src="{% static '/home/images/gokart2.jpg' %}" alt="..." /></div>
+                    <div class="col-lg-6" data-aos="fade-left"><img class="img-fluid"  src="{% static '/home/images/gokart3.jpg' %}" alt="..." /></div>
+
+
+                </div>
+                <!-- Project Two Row-->
+            </div>
+        </section>
+
+
 
 
         <!-- Contact Section-->
@@ -189,7 +219,7 @@
                 </div>
             </div>
         </section>
-        <!-- Contact-->
+        <!-- Contact
         <section class="contact-section bg-black">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
@@ -229,7 +259,7 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50">
             <div class="container px-4 px-lg-5"> Website by joelohaag@gmail.com
@@ -238,8 +268,11 @@
         </footer>
 
         <!-- Core theme JS-->
+
         <script src= "{% static "js/scripts.js" %}" ></script>
+        <script src= "{% static "js/AOS.js" %}" ></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
 
     </body>
 </html>
