@@ -167,4 +167,4 @@ EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
 # EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 # EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 # django_heroku.settings(locals())
-django_on_heroku.settings(locals())
+django_on_heroku.settings(locals(), staticfiles=False)
