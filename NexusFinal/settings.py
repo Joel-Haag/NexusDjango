@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 
-# import django_heroku
+import django_heroku
 import dj_database_url
 import environ
 import sentry_sdk
@@ -165,4 +165,4 @@ EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")
 # EMAIL_USE_SSL = False
 # EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 # EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
