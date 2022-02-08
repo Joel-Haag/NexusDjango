@@ -22,6 +22,7 @@
     <link href="{% static 'css/header.css' %}" rel="stylesheet">
 
 
+
 </head>
 <body id="page-top">
 <!-- Navigation-->
@@ -64,10 +65,10 @@
 <section class="about-section text-center bg-black" id="stages">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8">
-                <h2 class="text-white mb-4" >About us</h2>
-                <p class="text-white-50" >
-                    From epic house parties to an electric semi-annual festival. A space created created for
+            <div class="col-lg-8" >
+                <h2 class="text-white mb-4" data-aos="fade-down" >About us</h2>
+                <p class="text-white-50" data-aos="fade-up"> >
+                    An electric semi-annual festival. A space created created for
                     artists and expressionists to explore a profound collision of music, art & fashion. The Nexus is an
                     event which serves as the transformed rebirth of a long awaited sequel, brought to you by the hosts
                     of Mansion No More.
@@ -75,7 +76,7 @@
                 </p>
             </div>
         </div>
-        <img class="img-fluid"  src="{% static "home/images/logo.png" %}" alt="..."/>
+        <img class="img-fluid" data-aos="flip-right"  src="{% static "home/images/logo.png" %}" alt="..."/>
     </div>
 </section>
 
@@ -169,7 +170,7 @@
 <section class="projects-section bg-black" id="Attractions">
     <div class="container px-4 px-lg-5">
         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-            <h2 class="text-white mb-5 text-center">Attractions</h2>
+
             <div class="col-lg-6">
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
@@ -353,9 +354,9 @@
 
 <!-- Core theme JS-->
 
-<script src="{% static "js/scripts.js" %}"></script>
-<script src="{% static "js/AOS.js" %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static "home/js/scripts.js" %}"></script>
+<script src="{% static "home/js/AOS.js" %}"></script>
+<script src="{% static 'home/js/bootstrap.min.js' %}"></script>
 
 
 </body>
