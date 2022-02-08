@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 
-# import django_heroku
+import django_heroku
+
 # import django_on_heroku
 import dj_database_url
 import environ
@@ -147,7 +148,7 @@ STATIC_URL = "static/"
 MEDIA_URL = "media/"
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -182,5 +183,5 @@ LOGGING = {
     "handlers": {"console": {"level": "DEBUG", "class": "logging.StreamHandler"}},
     "loggers": {"MYAPP": {"handlers": ["console"], "level": "DEBUG"}},
 }
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
 # django_on_heroku.settings(locals())
