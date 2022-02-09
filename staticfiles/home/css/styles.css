@@ -4149,6 +4149,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  transition: top 1s;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -11474,7 +11475,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: #000000;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11486,12 +11487,12 @@ body {
   outline: none;
 }
 #mainNav .navbar-brand {
-  color: #000;
+  color: #64a19d;
   font-weight: 700;
   padding: 0.9rem 0;
 }
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(#fff, 80%);
+  color: fade(#000000, 80%);
   outline: none;
   background-color: transparent;
 }
