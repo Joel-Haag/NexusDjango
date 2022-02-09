@@ -187,7 +187,12 @@ LOGGING = {
 }
 
 # heroku things
-CSRF_TRUSTED_ORIGINS = ["https://www.thenexusfest.co.za/"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://www.thenexusfest.co.za/",
+    "https://www.thenexusfest.co.za",
+    "www.thenexusfest.co.za",
+]
+
 
 django_heroku.settings(locals())
 # django_on_heroku.settings(locals())
