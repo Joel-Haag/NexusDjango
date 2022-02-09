@@ -185,5 +185,9 @@ LOGGING = {
     "handlers": {"console": {"level": "DEBUG", "class": "logging.StreamHandler"}},
     "loggers": {"MYAPP": {"handlers": ["console"], "level": "DEBUG"}},
 }
+
+# heroku things
+CSRF_TRUSTED_ORIGINS = ["https://www.thenexusfest.co.za/"]
+
 django_heroku.settings(locals())
 # django_on_heroku.settings(locals())
