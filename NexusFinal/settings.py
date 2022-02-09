@@ -190,7 +190,6 @@ LOGGING = {
 CSRF_TRUSTED_ORIGINS = [
     "https://www.thenexusfest.co.za/",
     "https://www.thenexusfest.co.za",
-    "www.thenexusfest.co.za",
 ]
 
 
