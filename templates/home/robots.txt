@@ -1,1 +1,3 @@
 User-Agent: *
+
+Sitemap: https://www.thenexusfest.co.za

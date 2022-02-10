@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 import os
 
 import django_heroku
-
-# import django_on_heroku
 import dj_database_url
 import environ
 import sentry_sdk
@@ -63,6 +61,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "whitenoise.runserver_nostatic",
     "django.contrib.staticfiles",
+    # sitemap
+    "django.contrib.sites",
+    "django.contrib.sitemaps",
     # own
     "home.apps.HomeConfig",
 ]
@@ -194,4 +195,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 
 django_heroku.settings(locals())
-# django_on_heroku.settings(locals())
+
+
+# site Id
+SITE_ID = 1
