@@ -12,6 +12,7 @@ class Artist(models.Model):
     stage_name = models.CharField(max_length=50)
     content = models.TextField()
     stage_number = models.IntegerField()
+    list_order = models.IntegerField()
 
     def __str__(self):
         return f"{self.stage_name} performing on stage {self.stage_number} "
