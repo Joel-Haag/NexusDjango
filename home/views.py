@@ -9,12 +9,15 @@ def HomeView(request):
     performer = Artist.objects.order_by("list_order")
     attraction = Attraction.objects.order_by("list_order")
     aboutsection = AboutInfo.objects.all()
+
     return render(
         request,
         "home/home.html",
-        {"performer": performer},
-        {"attraction": attraction},
-        {"aboutsection": aboutsection},
+        {
+            "performer": performer,
+            "attraction": attraction,
+            "aboutsection": aboutsection,
+        },
     )
 
 
