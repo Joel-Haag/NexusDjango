@@ -14,7 +14,7 @@ class Artist(models.Model):
     stage_number = models.IntegerField()
 
     def __str__(self):
-        return f"{self.stage_name} is {self.stage_number} long"
+        return f"{self.stage_name} performing on stage {self.stage_number} "
 
 
 class DateRel(models.Model):
