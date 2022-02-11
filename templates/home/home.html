@@ -84,7 +84,7 @@
 </section>
 
 <!-- Projects-->
-<!--
+
 <section class="projects-section bg-black" id="Artists">
     <div class="container px-4 px-lg-5">
 
@@ -102,7 +102,11 @@
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-white">Stage 1</h4>
-
+                                {% for performers in performer %}
+                                    {% if performers.stage_number == 1 %}
+                                        <p class="mb-0 text-white-50">{{ performers.stage_name }} </p>
+                                    {% endif %}
+                                {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -136,18 +140,11 @@
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-white">Artists</h4>
-                            <p class="mb-0 text-white-50">DAZED </p>
-                            <p class="mb-0 text-white-50">NEO BRANDON </p>
-                            <p class="mb-0 text-white-50">GALILEO</p>
-                            <p class="mb-0 text-white-50">NO TIME FOR SPACE - ETHAN</p>
-                            <p class="mb-0 text-white-50">BLACK LAKE</p>
-                            <p class="mb-0 text-white-50">DAVID & GREVOL</p>
-                            <p class="mb-0 text-white-50">200 TONE</p>
-                            <p class="mb-0 text-white-50">BEEMINDFUL (CPT)</p>
-                            <p class="mb-0 text-white-50">NATASA</p>
-                            <p class="mb-0 text-white-50">AVI SUBBAN </p>
-                            <p class="mb-0 text-white-50">RYAN MURGATROID</p>
-                            <p class="mb-0 text-white-50">DOGSTAR & ILLING B2B</p>
+                                 {% for performers in performer %}
+                                    {% if performers.stage_number == 2 %}
+                                        <p class="mb-0 text-white-50">{{ performers.stage_name }} </p>
+                                    {% endif %}
+                                {% endfor %}
 
                         </div>
                     </div>
@@ -219,7 +216,7 @@
         </div>
     </div>
 </section>
--->
+
 
 <!-- Gallery-->
 <!--    <section class="projects-section bg-black" id="Gallery">
@@ -229,7 +226,8 @@
 
           </div>
       </div>
-  </section> -->
+  </section>
+ -->
 
 
 <!-- Contact Section-->
@@ -305,7 +303,7 @@
 </section>
 
 
-<!-- Contact
+<!-- Contact -->
 <section class="contact-section bg-black">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5">
