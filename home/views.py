@@ -7,7 +7,15 @@ from .models import *
 
 def HomeView(request):
     performer = Artist.objects.order_by("list_order")
-    return render(request, "home/home.html", {"performer": performer})
+    attraction = Attraction.objects.order_by("list_order")
+    aboutsection = AboutInfo.objects.all()
+    return render(
+        request,
+        "home/home.html",
+        {"performer": performer},
+        {"attraction": attraction},
+        {"aboutsection": aboutsection},
+    )
 
 
 def contact(request):

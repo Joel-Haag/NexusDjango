@@ -18,6 +18,22 @@ class Artist(models.Model):
         return f"{self.stage_name} performing on stage {self.stage_number} "
 
 
+class Attraction(models.Model):
+    title = models.CharField(max_length=200)
+    list_order = models.IntegerField()
+
+    def __str__(self):
+        return self.title
+
+
+class AboutInfo(models.Model):
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+
+    def __str__(self):
+        return self.title
+
+
 class DateRel(models.Model):
     info_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField("date published")
