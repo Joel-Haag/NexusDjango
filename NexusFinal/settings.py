@@ -59,9 +59,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "whitenoise.runserver_nostatic",
     "django.contrib.staticfiles",
-    # sitemap
-    "django.contrib.sites",
-    "django.contrib.sitemaps",
     # own
     "home.apps.HomeConfig",
 ]
