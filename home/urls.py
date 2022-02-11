@@ -9,7 +9,7 @@ sitemaps = {"static": StaticSitemap}  # add StaticSitemap to the dictionary
 
 
 urlpatterns = [
-    path("", views.HomeView.as_view(), name=""),
+    path("", views.HomeView, name="HomeView"),
     path("", views.contact, name="contact"),
     path(
         "sitemap.xml",

@@ -1,12 +1,13 @@
 from django.core.mail import send_mail
+from django.shortcuts import render
+from .models import *
 
 # Create your views here.
 
 
-from django.shortcuts import render
-from django.views import generic
-
-from .models import DateRel
+def HomeView(request):
+    performer = Artist.objects.order_by("stage_name")
+    return render(request, "home/home.html", {"performer": performer})
 
 
 def contact(request):
@@ -23,10 +24,5 @@ def contact(request):
     return render(request, "home/home.html")
 
 
-class HomeView(generic.ListView):
-    template_name = "home/home.html"
-    context_object_name = "date_info"
-
-    def get_queryset(self):
-        """Return Date."""
-        return DateRel.objects.order_by("-pub_date")[:5]
+# class HomeView:
+# template_name = "home/home.html"

@@ -84,7 +84,7 @@
 </section>
 
 <!-- Projects-->
-<!--
+
 <section class="projects-section bg-black" id="Artists">
     <div class="container px-4 px-lg-5">
 
@@ -111,20 +111,13 @@
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
-                            <h4 class="text-white">Artists</h4>
-                            <p class="mb-0 text-white-50">FILIPE </p>
-                            <p class="mb-0 text-white-50">LARRY DIGITAL </p>
-                            <p class="mb-0 text-white-50">TSHIAMO & NKANDU </p>
-                            <p class="mb-0 text-white-50">MOLOTOV </p>
-                            <p class="mb-0 text-white-50">ITS OFFICIAL Q (DJ Q) </p>
-                            <p class="mb-0 text-white-50">RAY SQUARED  </p>
-                            <p class="mb-0 text-white-50">FRANADILLA & LORENZO </p>
-                            <p class="mb-0 text-white-50">VIN GROOVIN </p>
-                            <p class="mb-0 text-white-50">CORNELIUS </p>
-                            <p class="mb-0 text-white-50">SOUL NATIVES </p>
-                            <p class="mb-0 text-white-50">GUMZ MUSIC </p>
-                            <p class="mb-0 text-white-50">ESONA </p>
+                         <h4 class="text-white">Artists</h4>
+                            {% for performers in performer %}
 
+                                {% if performers.stage_number == 1 %}
+                                    <p class="mb-0 text-white-50">{{ performers.stage_name }} </p>
+                                {% endif %}
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
@@ -148,18 +141,12 @@
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-white">Artists</h4>
-                            <p class="mb-0 text-white-50">DAZED </p>
-                            <p class="mb-0 text-white-50">NEO BRANDON </p>
-                            <p class="mb-0 text-white-50">GALILEO</p>
-                            <p class="mb-0 text-white-50">NO TIME FOR SPACE - ETHAN</p>
-                            <p class="mb-0 text-white-50">BLACK LAKE</p>
-                            <p class="mb-0 text-white-50">DAVID & GREVOL</p>
-                            <p class="mb-0 text-white-50">200 TONE</p>
-                            <p class="mb-0 text-white-50">BEEMINDFUL (CPT)</p>
-                            <p class="mb-0 text-white-50">NATASA</p>
-                            <p class="mb-0 text-white-50">AVI SUBBAN </p>
-                            <p class="mb-0 text-white-50">RYAN MURGATROID</p>
-                            <p class="mb-0 text-white-50">DOGSTAR & ILLING B2B</p>
+                            {% for performers in performer %}
+
+                                {% if performers.stage_number == 2 %}
+                                    <p class="mb-0 text-white-50">{{ performers.stage_name }} </p>
+                                {% endif %}
+                            {% endfor %}
 
                         </div>
                     </div>
@@ -169,7 +156,7 @@
 
     </div>
 </section>
--->
+
 <section class="projects-section bg-black" id="Attractions">
     <div class="container px-4 px-lg-5">
         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
@@ -301,9 +288,12 @@
                 <div class="card py-4 h-100 bg-black">
                     <div class="card-body text-center ">
                         <br/>
-                        <p class="text-white" >
-                            SILKVELOUR
-                        </p>
+                    <ul>
+                              <p class="text-white" >
+                                SILKVELOUR
+                              </p>
+
+                    </ul>
                         <div class="small text-white-50"><img class="img-fluid" src="{% static 'home/images/sponser2.jpg' %}"
                                                               alt="SILKVELOUR"/></div>
                     </div>
@@ -312,6 +302,7 @@
         </div>
     </div>
 </section>
+
 
 <!-- Contact
 <section class="contact-section bg-black">
