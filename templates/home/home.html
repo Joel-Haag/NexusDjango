@@ -50,11 +50,7 @@
     </div>
 </nav>
 <!-- Masthead-->
-{% for mainimage in frontimage %}
-    {% if mainimage.currentHead %}
-<header class="masthead" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url({{ mainimage.image.url }});">
-    {% endif %}
-{% endfor %}
+<header class="masthead">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <div class="text-center">
@@ -220,7 +216,6 @@
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5">
             <h2 class="text-white mb-5 text-center">SPONSORS</h2>
-            {% for sponsor in sponsors %}
                 <div class="col-md-4 mb-3 mb-md-0">
                     <div class="card py-4 h-100 bg-black">
                         <div class="card-body text-center">
@@ -228,12 +223,23 @@
                             <p class="text-white" >
                                 {{ sponsor.title }}
                             </p>
-                            <div class="small text-white-50"><img class="img-fluid" src="{{ sponsor.image.url }}"
+                            <div class="small text-white-50"><img class="img-fluid" src="{% static "home/images/sponsor1.jpg" %}"
                                                               alt="LAVIDA VODKA"/></div>
                         </div>
                     </div>
                 </div>
-            {% endfor %}
+                 <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100 bg-black">
+                        <div class="card-body text-center">
+                         <br/>
+                            <p class="text-white" >
+                                SILKVELOUR
+                            </p>
+                            <div class="small text-white-50"><img class="img-fluid" src="{% static "home/images/sponsor2.jpg" %}"
+                                                              alt="LAVIDA VODKA"/></div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 </section>
