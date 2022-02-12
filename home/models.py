@@ -44,7 +44,7 @@ class DateRel(models.Model):
 
 class Sponsor(models.Model):
     title = models.CharField(max_length=250)
-    image = models.FileField(blank=True)
+    image = models.FileField(upload_to="images/")
 
     def __str__(self):
         return self.title
