@@ -40,3 +40,19 @@ class DateRel(models.Model):
 
     def __str__(self):
         return self.info_text
+
+
+class Sponsor(models.Model):
+    title = models.CharField(max_length=250)
+    image = models.FileField(blank=True)
+
+    def __str__(self):
+        return self.title
+
+
+class SponsorImage(models.Model):
+    sponsor = models.ForeignKey(Sponsor, default=None, on_delete=models.CASCADE)
+    images = models.FileField(upload_to="images/")
+
+    def __str(self):
+        return self.sponsor.title
