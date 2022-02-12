@@ -1,5 +1,5 @@
 from django.core.mail import send_mail
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import *
 
 # Create your views here.
@@ -10,6 +10,9 @@ def HomeView(request):
     attraction = Attraction.objects.order_by("list_order")
     aboutsection = AboutInfo.objects.all()
 
+    # sponsor name and their images
+    sponsors = Sponsor.objects.all()
+
     return render(
         request,
         "home/home.html",
@@ -17,6 +20,7 @@ def HomeView(request):
             "performer": performer,
             "attraction": attraction,
             "aboutsection": aboutsection,
+            "sponsors": sponsors,
         },
     )
 
