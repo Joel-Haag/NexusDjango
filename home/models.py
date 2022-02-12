@@ -48,3 +48,12 @@ class Sponsor(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class FrontImage(models.Model):
+    title = models.CharField(max_length=250)
+    image = models.FileField(upload_to="images/")
+    currentHead = models.BooleanField()
+
+    def __str__(self):
+        return self.title

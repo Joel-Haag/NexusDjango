@@ -9,6 +9,7 @@ def HomeView(request):
     performer = Artist.objects.order_by("list_order")
     attraction = Attraction.objects.order_by("list_order")
     aboutsection = AboutInfo.objects.all()
+    frontimage = FrontImage.objects.all()
 
     # sponsor name and their images
     sponsors = Sponsor.objects.all()
@@ -21,6 +22,7 @@ def HomeView(request):
             "attraction": attraction,
             "aboutsection": aboutsection,
             "sponsors": sponsors,
+            "frontimage": frontimage,
         },
     )
 
