@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from home.views import contact, HomeView
 from django.views.generic.base import TemplateView  # import TemplateView
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path("", include("home.urls")),
@@ -29,4 +31,4 @@ urlpatterns = [
             template_name="home/robots.txt", content_type="text/plain"
         ),
     ),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

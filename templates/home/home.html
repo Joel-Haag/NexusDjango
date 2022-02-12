@@ -216,35 +216,20 @@
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5">
             <h2 class="text-white mb-5 text-center">SPONSORS</h2>
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100 bg-black">
-                    <div class="card-body text-center">
-
-
-                        <br/>
-                        <p class="text-white" >
-                            LAVIDA VODKA
-                        </p>
-                        <div class="small text-white-50"><img class="img-fluid" src="{% static 'home/images/vodkasponser.jpg' %}"
+            {% for sponsor in sponsors %}
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100 bg-black">
+                        <div class="card-body text-center">
+                         <br/>
+                            <p class="text-white" >
+                                {{ sponsor.title }}
+                            </p>
+                            <div class="small text-white-50"><img class="img-fluid" src="{{ sponsor.image.url }}"
                                                               alt="LAVIDA VODKA"/></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100 bg-black">
-                    <div class="card-body text-center ">
-                        <br/>
-                    <ul>
-                              <p class="text-white" >
-                                SILKVELOUR
-                              </p>
-
-                    </ul>
-                        <div class="small text-white-50"><img class="img-fluid" src="{% static 'home/images/sponser2.jpg' %}"
-                                                              alt="SILKVELOUR"/></div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
