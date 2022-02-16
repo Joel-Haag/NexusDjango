@@ -20,6 +20,7 @@ def HomeView(request):
         request,
         "home/home.html",
         {
+            "navbar": navbar,
             "performer": performer,
             "attraction": attraction,
             "about_section": about_section,
