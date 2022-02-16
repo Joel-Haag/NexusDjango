@@ -58,11 +58,9 @@
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <div class="text-center">
-                 {% for frontheadings in frontheading %}
-                <h1 class="mx-auto my-0 text-uppercase">{{ frontheadings.title }}</h1>
-                <h2 class="text-white-50 mx-auto mt-2 ">{{ frontheadings.first_line }}</h2>
-                <h2 class="text-white-50 mx-auto  mb-5">{{ frontheadings.second_line }}</h2>
-                {%  endfor %}
+                <h1 class="mx-auto my-0 text-uppercase">{{ front_heading.title }}</h1>
+                <h2 class="text-white-50 mx-auto mt-2 ">{{ front_heading.first_line }}</h2>
+                <h2 class="text-white-50 mx-auto  mb-5">{{ front_heading.second_line }}</h2>
                 <a class="btn btn-primary header-button"
                    href="https://www.howler.co.za/events/the-nexus-fest-110c/tickets" target="_blank">Buy Tickets</a>
             </div>
@@ -75,14 +73,10 @@
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8" >
-            {% if aboutsection.exists %}
-                {% for aboutsections in aboutsection %}
-                <h2 class="text-white mb-4" data-aos="fade-down" >{{ aboutsections.title }}</h2>
+                <h2 class="text-white mb-4" data-aos="fade-down" >{{ about_section.title }}</h2>
                 <p class="text-white-50" data-aos="fade-up">
-                    {{ aboutsections.content }}
+                    {{ about_section.content }}
                 </p>
-                {% endfor %}
-            {% endif %}
             </div>
         </div>
         <img class="img-fluid" data-aos="flip-right"  src="{% static "home/images/logofinal.JPG" %}" alt="NXS"/>

@@ -8,9 +8,9 @@ from .models import *
 def HomeView(request):
     performer = Artist.objects.order_by("list_order")
     attraction = Attraction.objects.order_by("list_order")
-    aboutsection = AboutInfo.objects.all()
+    about_section = AboutInfo.objects.all().first()
     frontimage = FrontImage.objects.all()
-    frontheading = FrontHeading.objects.all()
+    front_heading = FrontHeading.objects.all().first()
 
     # sponsor name and their images
     sponsors = Sponsor.objects.all()
@@ -21,10 +21,10 @@ def HomeView(request):
         {
             "performer": performer,
             "attraction": attraction,
-            "aboutsection": aboutsection,
+            "about_section": about_section,
             "sponsors": sponsors,
-            "frontimage": frontimage,
-            "frontheading": frontheading,
+            "front_image": frontimage,
+            "front_heading": front_heading,
         },
     )
 
