@@ -58,9 +58,11 @@
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <div class="text-center">
-                <h1 class="mx-auto my-0 text-uppercase">{{ frontheading.title }}</h1>
-                <h2 class="text-white-50 mx-auto mt-2 ">PRESENTED BY:</h2>
-                <h2 class="text-white-50 mx-auto  mb-5">THE HOSTS OF "MANSION NO MORE"</h2>
+                 {% for frontheadings in frontheading %}
+                <h1 class="mx-auto my-0 text-uppercase">{{ frontheadings.title }}</h1>
+                <h2 class="text-white-50 mx-auto mt-2 ">{{ frontheadings.first_line }}:</h2>
+                <h2 class="text-white-50 mx-auto  mb-5">{{ frontheadings.second_line }}"</h2>
+                {%  endfor %}
                 <a class="btn btn-primary header-button"
                    href="https://www.howler.co.za/events/the-nexus-fest-110c/tickets" target="_blank">Buy Tickets</a>
             </div>
