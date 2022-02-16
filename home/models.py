@@ -10,7 +10,6 @@ class FrontHeading(models.Model):
     title = models.CharField(max_length=200)
     first_line = models.CharField(max_length=200)
     second_line = models.CharField(max_length=200)
-    list_order = models.IntegerField()
 
     def __str__(self):
         return self.title
