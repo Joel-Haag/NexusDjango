@@ -6,10 +6,11 @@ from .models import *
 
 
 def HomeView(request):
+    navbar = NavbarHeading.objects.all().first()
     performer = Artist.objects.order_by("list_order")
     attraction = Attraction.objects.order_by("list_order")
     about_section = AboutInfo.objects.all().first()
-    frontimage = FrontImage.objects.all()
+    front_image = FrontImage.objects.all()
     front_heading = FrontHeading.objects.all().first()
 
     # sponsor name and their images
@@ -23,7 +24,7 @@ def HomeView(request):
             "attraction": attraction,
             "about_section": about_section,
             "sponsors": sponsors,
-            "front_image": frontimage,
+            "front_image": front_image,
             "front_heading": front_heading,
         },
     )

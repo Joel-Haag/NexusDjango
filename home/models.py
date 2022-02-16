@@ -6,6 +6,17 @@ from django.utils import timezone
 # Create your models here.
 
 
+class NavbarHeading(models.Model):
+    home = models.CharField(max_length=200)
+    about = models.CharField(max_length=200)
+    artists = models.CharField(max_length=200)
+    attractions = models.CharField(max_length=200)
+    contact = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.home
+
+
 class FrontHeading(models.Model):
     title = models.CharField(max_length=200)
     first_line = models.CharField(max_length=200)
