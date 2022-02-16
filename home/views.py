@@ -10,6 +10,7 @@ def HomeView(request):
     attraction = Attraction.objects.order_by("list_order")
     aboutsection = AboutInfo.objects.all()
     frontimage = FrontImage.objects.all()
+    frontheading = FrontHeading.objects.all()
 
     # sponsor name and their images
     sponsors = Sponsor.objects.all()
@@ -23,6 +24,7 @@ def HomeView(request):
             "aboutsection": aboutsection,
             "sponsors": sponsors,
             "frontimage": frontimage,
+            "frontheading": frontheading,
         },
     )
 
