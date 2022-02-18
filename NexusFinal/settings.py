@@ -106,12 +106,12 @@ WSGI_APPLICATION = "NexusFinal.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "lgmduanijnlzvaex",
-        "USER": "lib6ca3g3lb9qnxy",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "dadkror3c8pakf",
+        "USER": "ijqfmxsefmeyjg",
         "PASSWORD": env("DATABASE_PASSWORD"),
-        "HOST": "uyu7j8yohcwo35j3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-        "PORT": "3306",
+        "HOST": "ec2-54-209-221-231.compute-1.amazonaws.com",
+        "PORT": "5432",
     }
 }
 
