@@ -21,6 +21,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Own Css-->
     <link href="{% static 'home/css/header.css' %}" rel="stylesheet">
+    <link href="{% static 'home/css/headingWriting.css' %}" rel="stylesheet">
 
 
 
@@ -59,8 +60,8 @@
         <div class="d-flex justify-content-center">
             <div class="text-center">
                 <h1 class="mx-auto my-0 text-uppercase">{{ front_heading.title }}</h1>
-                <h2 class="text-white-50 mx-auto mt-2 ">{{ front_heading.first_line }}</h2>
-                <h2 class="text-white-50 mx-auto  mb-5">{{ front_heading.second_line }}</h2>
+                <h6 class="text-white-50 mx-auto mt-2 headingWriting">{{ front_heading.first_line }}</h6>
+                <h6 class="text-white-50 mx-auto  mb-5 headingWriting">{{ front_heading.second_line }}</h6>
                 <a class="btn btn-primary header-button"
                    href="https://www.howler.co.za/events/the-nexus-fest-110c/tickets" target="_blank">Buy Tickets</a>
             </div>
