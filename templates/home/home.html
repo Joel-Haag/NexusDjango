@@ -23,6 +23,9 @@
     <link href="{% static 'home/css/header.css' %}" rel="stylesheet">
     <link href="{% static 'home/css/headingWriting.css' %}" rel="stylesheet">
 
+    <!-- fonts -->
+     <link href="{% static 'home/fonts/AstronBoyWonder.ttf' %}" rel="stylesheet" type="text/css">
+
 
 
 </head>
@@ -59,7 +62,7 @@
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <div class="text-center">
-                <h1 class="mx-auto my-0 text-uppercase">{{ front_heading.title }}</h1>
+                <h1 class="mx-auto my-0 text-uppercase NexusHeading">{{ front_heading.title }}</h1>
                 <h6 class="text-white-50 mx-auto mt-2 headingWriting">{{ front_heading.first_line }}</h6>
                 <h6 class="text-white-50 mx-auto  mb-5 headingWriting">{{ front_heading.second_line }}</h6>
                 <a class="btn btn-primary header-button"

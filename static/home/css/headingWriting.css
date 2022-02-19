@@ -1,3 +1,12 @@
+@font-face {
+    font-family:AstronBoyWondor;
+    src: url("../fonts/AstronBoyWonder.ttf");
+}
+
+.NexusHeading {
+    font-family: "AstronBoyWondor", serif !important;
+
+}
 .headingWriting {
     font-size: 0.8rem;
 }
