@@ -19,6 +19,8 @@
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <!-- Own Css-->
     <link href="{% static 'home/css/header.css' %}" rel="stylesheet">
     <link href="{% static 'home/css/headingWriting.css' %}" rel="stylesheet">
@@ -28,13 +30,20 @@
 
 
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </head>
 <body id="page-top">
 <!-- Navigation-->
+
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="transition: top 1s;" id="mainNav">
     <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#page-top">
+
+        <a class="navbar-brand " href="#page-top">
             {{ navbar.home }}
+
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -58,6 +67,7 @@
     </div>
 </nav>
 <!-- Masthead-->
+
 <header class="masthead">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
@@ -71,6 +81,7 @@
         </div>
     </div>
 </header>
+
 
 <!-- About Section-->
 <section class="about-section text-center bg-black" id="stages">
@@ -86,6 +97,7 @@
         <img class="img-fluid" data-aos="flip-right"  src="{% static "home/images/logofinal.JPG" %}" alt="NXS"/>
     </div>
 </section>
+
 
 <!-- Projects-->
 {% if performer.exists %}
@@ -169,6 +181,8 @@
 </section>
 {% endif %}
 
+
+
 <!-- Gallery-->
 <!--    <section class="projects-section bg-black" id="Gallery">
       <div class="container px-4 px-lg-5">
@@ -205,15 +219,231 @@
                         </div>
                     </div>
                     <br/>
-                     -->
+
                     <div class="col-auto">
                         <button type="submit" class="btn btn-primary bg-black border-black ">Submit</button>
                     </div>
                 </form>
             </div>
+            <hr/>
+            <hr/>
+
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary bg-black border-black" data-toggle="modal" data-target="#exampleModalScrollable">
+                    Terms and conditions
+                </button>
         </div>
     </div>
+
 </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalScrollableTitle">FESTIVAL TERMS & CONDITIONS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+1. OVERVIEW
+1.1 You agree to be governed by these Terms as well as any applicable laws and regulations by purchasing a ticket to THE NEXUS FEST.
+1.2. “We” AND “our” refers to “THE NEXUS FEST”
+
+2. AGE RESTRICTION
+2.1. THE NEXUS FEST is strictly for persons over the age of 18. Due to liquor license rules and regulations, we will not allow entry to any person under the age of 18 and will take all reasonable endeavours to enforce this rule.
+2.2 If you purchase a ticket with fraudulent or stolen identification, your admission will be revoked, and you risk losing any potential refund of the price of the ticket.
+2.3 Having a Ticket does not guarantee admission to THE NEXUS FEST venue, and valid identification will be requested at all entry points. Please consult our FAQs for acceptable forms of identification. Failure to provide proof of identification will result in you being denied access to THE NEXUS FEST, and we will not be liable in any manner whatsoever for refunding your entrance fee/s.  Please consult our FAQs for acceptable forms of identification.
+
+3. YOUR TICKET
+3.1 You are solely responsible for maintaining possession of your ticket and tasking all necessary precautions to ensure that it is kept secure at all times throughout the festival. If your ticket is lost, stolen, or damaged, or if it is likely to be used by an unauthorized person, you agree to notify us promptly.
+3.2When entering THE NEXUS FEST location, we and/or official ticket dealers reserve the right to verify your identify. You will be denied admittance to THE NEXUS FEST venue if you do not have a valid form of identification, and you will not be entitled to a refund of the entrance fee. Only original South African ID books/cards, driver’s license cards, or state-issued passports original South Africa ID books/cards, driver’s license cards, or state-issued passports (together with a current photo) will be accepted as legitimate forms of identification.
+3.3 You will not be entitled to a refund of the entrance cost if your Ticket is lost or stolen
+3.4 THE NEXUS FEST tickets may only be purchased through Howler
+3.5 You will be denied admittance to THE NEXUS FEST if you have a Ticket obtained by any other means, including but not limited to various channels, third-party websites, or by avoiding, in any way, the procedure indicated in the registration link that grants access to the ticket.
+3.6 Tickets may only be exchanged via our official ticketing provider, Howler. THE NEXUS FEST or its official ticket seller reserve the right to cancel Tickets if they were purchased illegally or fraudulently via third parties and to institute legal action for any damages we may incur and recover any cancellation costs from you.
+3.7 THE NEXUS FEST Purchasing:
+3.7.1 Refunds are allowed. It is recommended that replacements are found and that your ticket is resold through the Howler ticketing platform.
+Forced Cancelation:
+In the event that the event’s organizers are compelled to cancel it owing to COVID-19 restrictions. The following fees apply to cancellations. Refunds are conducted in the following terms, excluding bookings and administrative fees:
+More than 30 days prior to the event
+100% of original Ticket purchase price refunded.
+
+Between 7 – 30 days prior to the event
+50% of original Ticket purchase price refunded.
+
+Less than seven days prior to the event
+25% of original Ticket purchase price refunded.
+
+The day of the event or during the event
+Strictly no refunds.
+
+All cancellations must be made at least 30 days in advance.
+
+Client Cancellation:
+In the event that the event’s organizers are compelled to cancel it owing to COVID-19 restrictions. The following fees apply to cancellations. Refunds are conducted in the following terms, excluding bookings and administrative fees:
+More than 30 days prior to the event
+50% of original Ticket purchase price refunded
+
+Between 7 – 30 days prior to the event
+25% of original Ticket purchase price refunded
+
+Less than seven days prior to the event
+Strictly no refunds
+
+After the event
+Strictly no refunds
+
+All cancellations require a 30 day lead time
+
+COVID-19 Positive Cancellation:
+In the event that a client requires a refund as a result of contracting COVID-19. The client must produce a laboratory-dated PCR certificate to qualify for a refund, in which case you will receive a complete refund less your booking expenses.
+
+Weather—related cancellations, force majeure, rioting, acts of terrorism, or any other act of God or unforeseeable disaster.
+There will be no refund on your ticket
+
+4. YOUR ATTENDANCE & BEHAVIOUR AT THE NEXUS FEST
+4.1 If you want to attend THE NEXUS FEST, your ticket must be validated when you arrive. Before being admitted to any venue’s that THE NEXUS FEST makes use of, attendees will be searched by security officers.
+4.2 Inspection at THE NEXUS FEST event gates will be accordance with the applicable laws as prescribed by the Safety at Sports and Recreational Events Act No. 2 of 2010.
+4.3 Security personnel of the same sex, you may request you to be subjected to a thorough pat-down and/or search of your clothes and luggage in order to intercept banned objects. If any prohibited objects are found in your possession, the security personnel will be entitled to confiscate the objects/s and refuse your admission into the festival venues.
+
+4.4 Security personnel ALWAYS have the final say, no exceptions.
+
+4.5 You will not be permitted to do the following at THE NEXUS FEST venue:
+4.5.1 Climb on tents, constructions, fences, light bridges, benches or any other structures on-site;
+4.5.2 Block entrances, exits and/or emergency exists;
+4.5.3 Disguise yourself in order to make you unrecognisable with the intention to disturb the peace or put the safety of the other festival-goers at risk;
+4.5.4 Sell food, beverages, or other products without first obtaining our written consent and obtaining the necessary licenses;
+4.5.5 Throw or shoot objects in solid, liquid or gas form;
+4.5.6 Smoke in non-smoking areas;
+4.5.7 Urinate and/or defecate in public;
+4.5.8 Wear full facial coverings (head masks, morphs suit, etc.)
+4.5.9 Park a vehicle without an official parking sticker issued by us. In such instances, vehicles may be towed at the owner’s expense;
+4.5.10 Tear down, break, damage and/or trash decorations;
+4.5.11 Make fires; or
+4.5.12 Crowd surf;
+This list is not exhaustive, and we reserve the right to expel or hand you over to the authorities if you are determined to be acting in an unacceptable manner
+4.6 Permitted Objects
+At THE NEXUS FEST venue, the following items are prohibited:-
+If you are blind or visually impaired, you can use a guide dog
+4.6.1 Photo cameras that are disposable or small
+4.6.2 Telescopic umbrellas (no parasols) without pins;
+4.6.3 Sunscreen, cosmetics, and deodorants in containers of up to 100mL;
+4.6.4 Refreshers/vaporisers, small backpacks and other bags; and
+4.6.5 ‘Selfie-sticks’, with a maximum length of 1 meter in an extended position and solely intended for taking pictures.
+
+4.7 Banned Objects
+The following objects are not permitted to enter THE NEXUS FEST venue:-
+4.7.1 Firearms;
+4.7.2 Ammunition;
+4.7.3 Knives;
+4.7.4 Any sharp or pointed metal object which can reasonably be considered to be a dangerous weapon;
+4.75 Any dangerous weapon as contemplated in section 1 of the Dangerous Weapons Act No. 63 of 1968;
+4.7.6 Explosives
+4.7.7 Tear gas, mace, or other similar airborne chemical agents, as defined in Section 1 of the Tear-Gas No.16 of 1964, or other comparable airborne chemical or organic agents, such as pepper spray;
+4.8.8 Narcotics and other mind-altering substances (except than those prescribed by a licensed physician);
+4.8.9 Animals (other than guiding dogs)
+4.8.10 Own foods or drinks
+4.8.11 Any food, beverage, or condiment container made of glass, plastic, or metal;
+4.8.12 Old South African flags
+4.8.13 Banners or flags whose content can be reasonably be considered to be vulgar, racist, sexist, discriminatory and/or offensive;
+4.8.14 Lasers or other potentially disruptive light emitting or reflecting/ refractive devices or objects
+4.8.15 Any chemical that may reasonable be regarded dangerous to THE NEXUS FEST attendee
+4.8.16 Fireworks, flares, or any other incendiary device or object that is highly combustible;
+4.8.17 Any device or object that could reasonably be considered disturbing to THE NEXUS FEST attendees
+4.8.18 Projectiles or explosives in solid, liquid or gas form;
+4.8.19 Deodorant or perfume in large bottles or containers (over 100ml); sticks;
+4.8.20 Walking sticks (medical crutches and devices accepted with medical practitioner’s note); and
+Any other object, including but not limited to umbrellas, parasois, camera tripods which the appointed security personnel may decide pose a risk to the other festival-goers.
+4.9 Zero Tolerance to Drugs
+4.9.1 THE NEXUS FEST and all venue partners maintain a zero-tolerance to drugs of any kind!
+4.9.2 Carrying, using, dealing, and/or being in possession of drugs is prohibited on the festival grounds. You will be detained and handed over to the South African Police Service for prosecution if you are caught breaking or violating this drug policy.
+4.9.3 Admission to THE NEXUS FEST venue is prohibited or may be refused or denied (without entitlement to a refund of the entrance fee) if you, -
+4.9.4.1 Are under the influence of alcohol or any other prohibited substance which has a narcotic effect;
+4.9.4.2 Are in possession of or trading in illegal substances;
+4.9.4.3 Have been denied admittance to other events in the past;
+4.9.4.4 Show behaviour that manifestly hints at an intention to disturb the peace or to provoke, enact violence, hate, rage, etc.;
+4.9.4.5 Endanger the lives or well-being of other festival attendees;
+4.9.4.6 Have prohibited items in their possession;
+Refuse to be searched by security agents (4.9.4.7); or
+Refuse or fail to comply with these Terms
+4.10 YOUR ADMISSION MAY BE REFUSED OR DENIED, OR YOU MAY BE EXPELLED, WITHOUT ANY REFUND OF THE ENTRANCE FEE, IF YOU FAIL TO COMPLY WITH THE GENERAL RULES, TERMS, AND CONDITIONS. YOU WILL BE REQUIRED TO VACATE THE NEXUS FEST VENUE WITH IMMEDIATE EFFECT IF YOU ARE REFUSED OR DENIED ADMISSION OR EXPELLED
+
+5. CONSENT
+5.1 By purchasing a Ticket, you automatically consent to be photographed, filmed or otherwise recorded and for the resulting images and/or recordings to be used or broadcast by THE NEXUS FEST and/or its partners. We may use these images and/or recordings for promotional and/or commercial purposes related to THE NEXUS FEST without any compensation being paid to you.
+6. SAFETY
+6.1 To ensure public order and safety during THE NEXUS FEST event, you are obliged to obey instructions and directions and/or those of our authorised representatives at the festival venues.
+6.2 For safety reasons, THE NEXUS FEST reserves the right to:-
+6.2.1 At any point, interrupt or cancel THE NEXUS FEST event
+6.2.2 Bar you from entering or departing festival venues until further notice;
+6.2.3 Request that you leave the event grounds; or
+6.2.4 Even if you have a valid Ticket, refuse entrance to festival venues
+7. CANCELLATION OR RESCHEDULING OF THE FESTIVAL
+7.1 Due to circumstances beyond our control, we retain the right to cancel or reschedule all or part of THE NEXUS FEST event, or to change its program. Your ticket will remain valid if the program is changed, but we will not be compelled to refund or exchange the price of your ticket.
+7.2 If THE NEXUS FEST is rescheduled or cancelled, we will use our reasonable endeavours to notify you as soon as possible by publishing the details thereof on our website and to email and SMS you on the contact details you provided at the time of purchasing your ticket.
+7.3 WE SHALL NOT BE OBLIGATED TO REFUND YOU THE PURCHASE PRICE OF YOUR TICKET IN CIRCUMSTANCES WHERE RAGE FESTIVAL IS CANCELLED DUE TO CIRCUMSTANCES BEYOND OUR CONTROL, INCLUDING BUT NOT LIMITED TO GLOBAL PANDEMIC OUTBREAKS.
+8. DISCLAIMER
+8.1 By attending THE NEXUS FEST, you expressly agree that such attendance is at your own risk. We endeavour to provide a service of the highest quality but cannot guarantee the quality of any services provided by independent contractors at the various venues. There may be occasions when services may be interrupted due to strikes, riots, emergency repairs, technical failures or other reasons beyond our control, including force majeure.
+8.2 THE NEXUS FEST MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, WITH RESPECT TO THE FESTIVAL OR ITS OPERATION, OR ANY SERVICES OFFERED AT FESTIVAL.
+8.3 THE NEXUS FEST ACCEPTS NO LIABILITY OR RESPOBSIBILTY WHATSOEVER FOR ANY LOSS OR DAMAGE YOU MAY SUFFER BY ANY PERSON AT THE NEXUS FEST EVENT.
+9. LIMITATION OF LIABILITY
+9.1 To the full extent permitted by the laws of the Republic of South, THE NEXUS FEST disclaims all warranties and representations, express or implied.
+9.2 You accept that we have no control over the activities of the artists that play at THE NEXUS FEST, and that as a result, we cannot be held liable for any loss or damage of any kind resulting from a performance delay, overrun, or cancellation. We shall not be liable for any special, indirect, incidental, punitive, or consequential damages, economic or other business loss, or reputational harm that you may suffer as a result of attending THE NEXUS FEST. Your remedy is limited to leaving THE NEXUS FEST Event.
+9.3 THE NEXUS FEST will be liable for damages suffered by you if they are directly and solely caused by our gross negligence or fraud.
+9.4 Excluded from compensation is:-
+9.4.1 Consequential damages;
+9.4.2 Immaterial damages; and
+9.4.3 Damage intentionally caused by a festival goer or as a result of his/her wilful negligence.
+9.5 You will attend THE NEXUS FEST Event at your own risk. WE do not accept any liability whatsoever for damage caused by you entering a venue and/or attending a concert that results in your personal injury, death or damage to your personal property.
+9.6 THE NEXUS FEST shall not be liable for any injury, damage, loss, accident howsoever caused owing from the act, omission, fault or negligence of any suppliers or subcontractors, including but not limited to security personnel, engaged in carrying out contractual arrangements for us at THE NEXUS FEST Event.
+
+10. INDEMNIFICATION
+10.1 You hereby agree to indemnify and hold harmless THE NEXUS FEST and its owners, employees and agents against any costs, claims, suits, proceedings, disputes, losses and damages (including legal fees) incurred by or awarded against THE NEXUS FEST as a result of your acts and/or omissions at THE NEXUS FEST, violation of any third party right, violation of any laws and regulations, any misrepresentation made by you or any other person or persons or your breach or alleged breach of these Terms.
+11. BREACH OF TERMS
+11.1 THE NEXUS FEST retains the right to restrict or refuse you access to all or any portion of THE NEXUS FEST Events if you have violate any of these Terms.
+12. AMENDMENT TO TERMS
+12.1 THE NEXUS FEST reserves the right, at its sole and absolute discretion, to amend or modify these Terms at any time and without previous notice. Please check our Terms on a frequent basis to make sure you’ve read the most recent version.
+12.2 The Terms were last updated on Monday 21 February 2022
+
+13. TERMINATION OF THE NEXUS FEST AND TERMS
+13.1 These Terms at its sole and absolute discretion and reserves the right to modify or discontinue all or any part of THE NEXUS FEST Events and to restrict or prohibit your access to it at any time, without liability to you or any other person.
+13.2 Upon termination, all rights granted to you in respect of these Terms will immediately cease.
+14. CHOICE OF LAW
+14.1 The Laws of the Republic of South Africa shall govern these Terms
+14.2 In the event of a dispute of these Terms, any competent division of the High Court of the Republic of South Africa will have jurisdiction.
+14.3 In the event that any provisions of these Terms are found to be invalid, unlawful or unenforceable by any competent authority, such provision shall be served, and the remaining provisions will continue in full force and effect.
+15. COMPLAINTS & DISPUTES
+15.1 Please send all complaints to info@thenexusfest.co.za and disagreements about THE NEXUS FEST
+15.2 Your complaint will be handled within a reasonable time after it is received, and you may be asked to submit adequate evidence if necessary.
+16. PRIVACY
+16.1 THE NEXUS FEST respects your privacy and will not disclose your personal information to tird parties for marketing purposes if you request us not to do so. By purchasing a Ticket to THE NEXUS FEST, you consent to the processing of your personal information for promotional and commercial purposes and warrant that all data provided by you is accurate and up to date, You are responsible for maintaining and promptly updating account information for accuracy and completeness.
+16.2 If you object to your personal information being used for promotional and commercial purposes, you may submit, at no cost, written request to us to stop this use.
+17. General
+17.1 You are not permitted to cede, assign, or otherwise transfer your rights and obligations under these Terms to any third party.
+17.2 No variation, addition, deletion, or agreed cancellation of these Terms will be of any force or effect unless in writing and accepted by or on behalf of the parties hereto.
+17.3 No indulgence, extension of time, relation or latitude which any party (the “grantor”) may show, grant or allow to the other (the “grantee”) shall constitute a waver by the grantor of any of the grantor’s rights, and the grantor shall not thereby be prejudiced or stopped from exercising any of its rights against the grantee which may have arisen in the past or which might arise in the future.
+17.4 These Terms contain the whole agreement between you and THE NEXUS FEST, and no other warranty, representation or undertaking is valid unless contained in this document.
+17.5 Any failure on you or THE NEXUS FEST to enforce any right in terms hereof shall not consitutute a waiver of that right.
+18.6 The headings in these Terms are given for your convenience soley and have no bearing on the terms.
+
+Information:
+Name: THE NEXUS FEST
+Address: 1 Nasrec Road, Johannesburg South
+Website: thenexusfest.co.za
+Email address: info@thenexusfest.co.za
+Telephone:
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <section class="contact-section bg-black">
@@ -309,6 +539,8 @@
     <div class="container px-4 px-lg-5"> Website by joelohaag@gmail.com
     </div>
 </footer>
+
+
 
 <!-- Core theme JS-->
 
