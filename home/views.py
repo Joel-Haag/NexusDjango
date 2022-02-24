@@ -6,11 +6,9 @@ from .models import *
 
 
 def contact(request):
-    print("workingNow")
     if request.method == "POST":
         message_email = request.POST["message-email"]
         message = request.POST["message"]
-        print("working")
         # send email
         send_mail(
             subject="NEXUS",
@@ -37,8 +35,8 @@ def HomeView(request):
         message = request.POST["message"]
         # send email
         send_mail(
-            subject="NEXUS",
-            message=message,
+            subject="MESSAGE FROM WEBSITE",
+            message=message_email + " sent: " + message,
             from_email=message_email,
             recipient_list=["NexusFestivalS@gmail.com"],
         )
