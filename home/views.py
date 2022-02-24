@@ -5,6 +5,22 @@ from .models import *
 # Create your views here.
 
 
+def contact(request):
+    print("workingNow")
+    if request.method == "POST":
+        message_email = request.POST["message-email"]
+        message = request.POST["message"]
+        print("working")
+        # send email
+        send_mail(
+            subject="NEXUS",
+            message=message,
+            from_email=message_email,
+            recipient_list=["NexusFestivalS@gmail.com"],
+        )
+    return render(request, "home/home.html")
+
+
 def HomeView(request):
     navbar = NavbarHeading.objects.all().first()
     performer = Artist.objects.order_by("list_order")
@@ -12,9 +28,20 @@ def HomeView(request):
     about_section = AboutInfo.objects.all().first()
     front_image = FrontImage.objects.all()
     front_heading = FrontHeading.objects.all().first()
-
+    print("1")
     # sponsor name and their images
     sponsors = Sponsor.objects.all()
+
+    if request.method == "POST":
+        message_email = request.POST["message-email"]
+        message = request.POST["message"]
+        # send email
+        send_mail(
+            subject="NEXUS",
+            message=message,
+            from_email=message_email,
+            recipient_list=["NexusFestivalS@gmail.com"],
+        )
 
     return render(
         request,
@@ -29,20 +56,6 @@ def HomeView(request):
             "front_heading": front_heading,
         },
     )
-
-
-def contact(request):
-    if request.method == "POST":
-        message_email = request.POST["message-email"]
-        message = request.POST["message"]
-        # send email
-        send_mail(
-            subject="NEXUS",
-            message=message,
-            from_email=message_email,
-            recipient_list=["NexusFestivalS@gmail.com"],
-        )
-    return render(request, "home/home.html")
 
 
 # class HomeView:
